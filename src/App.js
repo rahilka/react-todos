@@ -17,10 +17,7 @@ class App extends Component {
 
   // Toggle Complete
   markComplete = (id) => {
-    console.log('id: ', id);
     this.setState({ todos: this.state.todos.map(todo => {
-      console.log('todo: ', todo);
-      console.log('****************')
       if(todo.id === id) {
         todo.completed = !todo.completed
       }
