@@ -1,15 +1,15 @@
-import React from "react";
-import TodoItem from "./TodoItem";
+import React from 'react'
+import TodoItem from './TodoItem'
 
-function Todos({ todos, markComplete, delTodo }) {
+function Todos ({ todos, markAsComplete, deleteTodo }) {
   return todos.map(todo => (
     <TodoItem
       key={todo.id}
       todo={todo}
-      markComplete={markComplete}
-      delTodo={delTodo}
+      markAsComplete={markAsComplete}
+      deleteTodo={deleteTodo}
     />
-  ));
+  ))
 }
 
-export default Todos;
+export default Todos
